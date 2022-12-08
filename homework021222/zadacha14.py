@@ -12,6 +12,8 @@
 # Фредди Меркури 3
 # Александр Пушкин 4
 
+from typing import list
+
 def change_spisok(spisok: list[str], accept: str) -> str:
     file_spisok = ''
     for name in spisok:
