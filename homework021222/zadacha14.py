@@ -21,12 +21,12 @@ def change_spisok(spisok: list[str], accept: str) -> str:
         file_spisok += string     
     return file_spisok
 
-file_spisok = open('ozenki.txt', 'r', encoding='utf-8')
+file_spisok = open('ozenki.txt.txt', 'r', encoding='utf-8')
 lines_spisok = file_spisok.read().split('\n')
 file_spisok.close()
 
 spisok_new = change_spisok(lines_spisok, accept='5')
 
-file_spisok = open('ozenki.txt', 'w', encoding='utf-8')
+file_spisok = open('ozenki.txt.txt', 'w', encoding='utf-8')
 file_spisok.write(spisok_new)
 file_spisok.close()
