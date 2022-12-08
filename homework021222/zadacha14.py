@@ -12,10 +12,10 @@
 # Фредди Меркури 3
 # Александр Пушкин 4
 
-def change_spisok(spisok^ list[str], accept^ str) -> str^
+def change_spisok(spisok: list[str], accept: str) -> str:
     file_spisok = ''
-    for name in spisok^
-        if name.count(accept)^
+    for name in spisok:
+        if name.count(accept):
             name = name.upper()
         string = name +'\n'
         file_spisok += string     
